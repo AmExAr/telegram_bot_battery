@@ -19,10 +19,15 @@
    pip install -r requirements.txt
    ```
 3. В файле ***config***:
-    1. В первой строке прописать *api_token*, полученный от официального Telegram-бота *[BotFather](https://t.me/BotFather)*
+    1. В первой строке прописать *api_token*, полученный от официального Telegram бота *[BotFather](https://t.me/BotFather)*
     2. Во второй строке прописать ваш id как админа. Его можно получить в этом *[боте](https://t.me/my_id_bot)*
 4. Запустить файл main.py команндой:
     ```
     python main.py
     ```
 5. *Profit!!!*
+## Пример файла ***config***:
+```
+999999999:FFFFFFFFFFFFFFFFFFFFFF
+11111111
+```
