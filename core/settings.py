@@ -1,4 +1,3 @@
-from environs import Env
 from dataclasses import dataclass
 
 
@@ -12,16 +11,15 @@ class Settings:
     bots: Bots
 
 
-def get_settings(path: str):
-    env = Env()
-    env.read_env(path)
+def get_settings():
+    config_file = open(r'.\config', 'r')
 
     return Settings(
         bots=Bots(
-            bot_token=env.str("token"),
-            admin_id=env.int("admin")
+            bot_token=config_file.readline().replace('\n', ''),
+            admin_id=int(config_file.readline())
         )
     )
 
 
-settings = get_settings('config')
+settings = get_settings()

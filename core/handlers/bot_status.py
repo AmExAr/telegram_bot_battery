@@ -1,7 +1,7 @@
 from aiogram import Bot
 from aiogram.types import Message
-from core.settings import settings
 
+from core.settings import settings
 from core.utils.commands import set_commands
 
 

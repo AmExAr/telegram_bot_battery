@@ -6,4 +6,4 @@ reply_keyboard = ReplyKeyboardMarkup(keyboard=[
             text='Статус'
         )
     ]
-], resize_keyboard=True, input_field_placeholder='Выбери кнопку \/')
+], resize_keyboard=True, input_field_placeholder='Нажми на кнопку ↓')
